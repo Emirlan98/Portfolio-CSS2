@@ -1,6 +1,6 @@
 :root{
-  --accent:#0591ff;
-  --accent-light: #0e74c2;
+  --accent:#7912c5;
+  --accent-light: #7b13d1;
   --pure-white:#fff;
 }
 html{
@@ -21,7 +21,16 @@ body {
   width: 1140px;
    /* border: 1px solid black; */
   margin: 0 auto;
-  padding: 0 20px;   
+  padding: 0px 20px;   
+}
+.section{
+  /* padding: 0px 0; */
+  margin-bottom: 60px;
+}
+.section-title{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
 }
 
   .header{
@@ -34,14 +43,12 @@ body {
   color: var(--pure-white);
   text-decoration: none;
 }  
+
 .header-nav{
   padding: 11px 0 ;
 display: flex;
 justify-content:space-between;
 align-items: center;
-
-/* min-height: 40px; */
- 
 }
 .header-logo {
    width: 35%;
@@ -56,18 +63,8 @@ align-items: center;
   margin: 0%;
   padding: 0%;
   list-style: none;
-  /* background-color: antiquewhite; */
 }
-/* .clear-fix {
-content: "";
-display: table;
-clear: both;
-} */
-/* .header-menu-item{
-  display: inline-block;
- float: left;
- background-color: antiquewhite;
-} */
+
 .header-menu-link{
   font-size:16px ;
   line-height: 16px;
@@ -76,30 +73,160 @@ clear: both;
   transition: background-color 0.04s;
 }
 .header-menu-link:hover{
-  background-color: var(--accent-light)
+  background-color: var(--accent-light);
 }
-img { 
-  float: left;
-  border-radius: 100%;
-  width: 250px;
-
+.intro{
+  padding: 60px 0;
 }
  
-.container-2{
-  width: 1140px;
-  height: 320px;
-  /* border: 1px solid black; */
- margin: 0 auto;
- padding: 0 20px;  
-}
-.header-div{
-  padding: 30px 0 ;
-
-}
-.header-2{
-  padding: 0 30px ;
-  display:flexbox;
-  justify-content:center;
+.intro-inner{
+  display:flex;
+  justify-content: center;
   align-items: center;
- 
+  gap: 40px;
+}
+.intro-img{
+  width:250px;
+  height:300px;
+  border-radius: 10%;
+}
+.intro-text{
+width: 50%;
+}
+.intro-text h1,
+.intro-text h3{
+  margin: 0 0 15px;
+}
+.contacts img{
+  /* display: flex; */
+  width: 40px;
+  height: 30px;
+  margin: 10px 80px;
+}
+.contacts h4{
+  text-align: center;
+  margin: 10px 60px;
+}
+.contacts a{
+  color: var(--accent-light);
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.skills{
+  border-radius: 10px;
+  padding: 10px;
+  background-color:var(--accent);
+  color:var(--pure-white);
+}
+.skills ul{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin:0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+.skills li{
+  padding: 10px 15px;
+  background-color:var(--accent-light);
+  border-radius: 4px;
+}
+
+.code-exzample pre {
+width: 40%;
+margin: 0 auto;
+text-align:left;
+background-color: var(--accent);
+color:var(--pure-white);
+border-radius: 10px;
+font-size: 16px;
+}
+
+.languages ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 50px; */
+  color:var(--accent);
+  padding-left: 60px;
+  padding-right: 30px;
+
+  
+}
+
+.flip-wrapper {
+  width: 110%;
+  display: flex;
+  justify-content:center;
+  gap: 100px;
+  
+}
+
+.flip {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 20%;
+  height: 100px;
+}
+
+.flip-side {
+  width: 70%;
+  height: 100px;
+  /* position: absolute; */
+}
+
+.side-back-kg{
+  background-image:url(/images/flag-kg.png);
+  background-size: 170px;
+  transform: rotateX(180deg);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+}
+.side-back-usa{
+  background-image:url(/images/flag-USA.png);
+  background-size: 200px;
+  transform: rotateX(180deg);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+}
+.side-back-ru{
+  background-image:url(/images/flag-ru.png);
+  background-size: 150px;
+  transform: rotateX(180deg);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+}
+.flip:hover {
+  transform: rotateX(360deg);
+}
+
+.edication {
+  border-radius: 10px;
+  padding: 40px;
+  background-color:var(--accent);
+  color:var(--pure-white);
+}
+.edication ul{
+  width: 70%;
+  /* list-style: none; */
+
+  
+}
+.edication b,
+.edication a {
+  color:var(--pure-white);
+  text-decoration: none;
+}
+footer{
+ text-align: center ;
 }

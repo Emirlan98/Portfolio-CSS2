@@ -37,25 +37,35 @@
           </nav>
         </div>
       </header>
-      <div class="container-2">
-        <div class="header-div">
-
-          <img src="./images/avatar.png" alt="Emirlan's avatar"   />
-          <h1 class="header-2">Emirlan Tursunkulov</h1>
-          <h3 class="header-2">Front-end Developer</h3>
-          <p class="header-2">
-            I am sociable, friendly, fair, attentive, striving for excellence in my profession and open to new knowledge.
-          </p>
+      <main>
+        <div class="container">
+      <section class="intro">
+          <div class="intro-inner">
+             <img class="intro-img" src="./images/avatar-1.png" alt="Emirlan's avatar"   />
+             <div class="intro-text">
+               <h1>Emirlan Tursunkulov</h1>
+               <h3>Front-end Developer</h3>
+               <p>
+                 I am sociable, friendly, fair, attentive, striving for excellence in my profession and open to new knowledge.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-          <h3>Contacts</h3>
+      <section class="contacts section">
+        <div class="container">
+          <h2 class="section-title">Contacts</h2>
           <ul>
+            <img class="logo" src="./images/logo-location.png" width="30px">
+            <img class="logo" src="./images/logo-phone.png" width="40px">
+            <img class="logo" src="./images/logo-email.png" width="40px">
+           </ul>
+           <ul>
             <li>
               <h4>Location</h4>
               <a
               href="https://www.google.com.tr/maps/place/%D0%A2%D0%BE%D0%BC%D1%81%D0%BA,+%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB./@56.2087698,84.8116355,7.35z/data=!4m5!3m4!1s0x432693b2b65d4c1b:0xcf0bf11d988ae72f!8m2!3d56.4884295!4d84.9480469?hl=ru"
-              >
-              <p>Tomsk, Russian</p>
+              > Tomsk, Russian
             </a>
           </li>
           <li>
@@ -64,73 +74,100 @@
           </li>
           <li>
             <h4>Email</h4>
-            <a href="mailto:emirlan.tursunkulov.alt@gmail.com"
-            >emirlan.tursunkulov.alt@gmail.com</a>
+            <a href="mailto:emirlan.tursunkulov.alt@gmail.com" > emirlan.tursunkulov.alt@gmail.com</a>
           </li>
         </ul>
-        <main>
-          <section id="skills">
-           <h2>Skills</h2>
-           <ul>
-             <li>HTML</li>
-             <li>Visual Studio Code</li>
-             <li>Photopea</li>
-             <li>Canva</li>
-           </ul>
-         </section>
+      </div>
+      </section>
+      <div class="container">
+      <section id="skills" class="skills section" >
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Visual Studio Code</li>
+            <li>Photopea</li>
+            <li>Canva</li>
+          </ul>
+        </section>
+      </div>
 
-         <section id="code">
-           <h2>Code Example</h2>
-           <pre>
-                   <code>
-                     &lt;ul&gt;
-                       &lt;li&gt;HTML&lt;&frasl;li&gt;
-                       &lt;li&gt;Visual Studio Code&lt;&frasl;li&gt;
-                       &lt;li&gt;Photopea&lt;&frasl;li&gt;
-                       &lt;li&gt;Canva&lt;&frasl;li&gt;
-                     &lt;&frasl;ul&gt;
+
+      <div class="container">
+         <section class="code-exzample section" id="code">
+
+             <h2 class="section-title ">Code Example</h2>
+             <pre>
+               <code>
+                .contacts ul {
+                  display: flex;
+                  justify-content: center;
+                  gap: 30px;
+                  flex-wrap: wrap;
+                  margin:0;
+                  padding: 0;
+                  list-style: none;
+                }
                    </code>
                </pre>
-         </section>
-
-         <section id="Experience">
-           <h2>Experience</h2>
-           <ul>
-             <li><b>Alanya, Antalya</b> &mdash;Transfer guide (2018-2019)</li>
-           </ul>
+              </section>
+            </div>
+              
+              <section id="Experience">
+                
        </section>
-         <section id="languages">
-           <h2>Languages</h2>
-          <ul>
-             <li><b>English</b> &mdash; Elementary</li>
-             <li><b>Russian</b> &mdash; Fluent</li>
-             <li><b>Kyrgyz</b> &mdash; Native</li>
-           </ul>
-         </section>
-         <section id="education">
-           <h2>Education</h2>
-           <ul>
-             <li>
-               <a href="http://iku.kg/">
-                 <b>INTERNATIONAL KUWEIT UNIVERSITY </b>
-               </a><br />
-               Faculty of Economic, profile finance and credit.(2016-2020)
-             </li>
-             <li>
-               <a href="https://linktr.ee/jyldyzacademy2020">
-                 <b>JYLDYZACADEMY</b>
-                 </a ><br/>
-               Front-end Developer(2022-)
-             </li>
-           </ul>
-         </section>
+
+       <div class="container">
+         <section id="languages" class="languages section">
+             <h2 class="section-title " >Languages</h2>
+             
+                <div class="flip-wrapper">
+                    <div class="flip">
+                        <div class="flip-side side-back-kg"> </div>
+                    </div>
+                    <div class="flip">
+                      <div class="flip-side side-back-usa"></div>
+                  </div> <div class="flip">
+                    <div class="flip-side side-back-ru"></div>
+                </div>
+                </div>
+            
+             <ul>
+               <li><b>Kyrgyz</b> &mdash; Native</li>
+               <li><b>English</b> &mdash; Elementary</li>
+               <li><b>Russian</b> &mdash; Fluent</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="container">  
+            <section id="education" class="edication section">
+                <h2 class="section-title ">Education</h2>
+                <ul>
+                  <li>
+                    <a href="http://iku.kg/">
+                      <b>INTERNATIONAL KUWEIT UNIVERSITY </b>
+                    </a><br />
+                    Faculty of Economic, profile finance and credit.(2016-2020)
+                  </li>
+                  <li>
+                    <a href="https://linktr.ee/jyldyzacademy2020">
+                      <b>JYLDYZACADEMY</b>
+                    </a ><br/>
+                    Front-end Developer(2022-)
+                  </li>
+                </ul>
+              </section>
+            </div>
        </main>
        <footer>
-         <p> 2022 &copy;
-           Emirlan Tursunkulov.
-           <a href="https://linktr.ee/jyldyzacademy2020">Jyldyz Academy. </a>
-         </p>
-       </footer>
+         <div class="container">
+           <p class="section"> 2022 &copy;
+             Emirlan Tursunkulov.
+             <a href="https://linktr.ee/jyldyzacademy2020">Jyldyz Academy. </a>
+            </p>
+          </div>
+          </footer>
      </body>
    </html>
         
