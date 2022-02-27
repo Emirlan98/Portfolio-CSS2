@@ -191,6 +191,14 @@ font-size: 16px;
   /* position: absolute; */
 }
 
+.flip-side img{
+  width: 100%;
+  height: 100px;
+  /* background-size: 10px; */
+  /* transform: rotateX(180deg); */
+  /* border: 1px solid var(--accent); */
+  border-radius: 10px;
+}
 .side-back-kg{
   /* background-image:url(/images/flag-kg.png); */
   background-size: 170px;
@@ -198,36 +206,29 @@ font-size: 16px;
   border: 1px solid var(--accent);
   border-radius: 10px;
 }
-.flip-side img{
-  width: 100%;
-  /* background-size: 10px; */
-  transform: rotateX(180deg);
-  /* border: 1px solid var(--accent); */
-  border-radius: 10px;
-}
 .side-back-turkish{
-  background-image:url(/images/Flag-Turkey.png);
-  background-size: 170px;
+  /* background-image:url(/images/Flag-Turkey.png); */
+  /* background-size: 170px; */
   transform: rotateX(180deg);
   border: 1px solid var(--accent);
   border-radius: 10px;
 }
 .side-back-usa{
-  background-image:url(/images/flag-USA.png);
-  background-size: 200px;
+  /* background-image:url(/images/flag-USA.png); */
+  background-size: 500px;
   transform: rotateX(180deg);
   border: 1px solid var(--accent);
   border-radius: 10px;
 }
 .side-back-ru{
-  background-image:url(/images/flag-ru.png);
+  /* background-image:url(/images/flag-ru.png); */
   background-size: 150px;
   transform: rotateX(180deg);
   border: 1px solid var(--accent);
   border-radius: 10px;
 }
 .flip:hover {
-  transform: rotateX(500deg);
+  transform: rotateX(540deg);
 }
 .edication {
   border-radius: 10px;
